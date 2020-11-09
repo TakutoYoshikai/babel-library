@@ -8,7 +8,6 @@ function randomString(n) {
     result += chars[Math.floor(Math.random() * chars.length)]; 
     console.log(n - i);
   }
-  console.log(result);
   return result;
 }
 

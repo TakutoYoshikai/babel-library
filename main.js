@@ -11,4 +11,7 @@ function randomString(n) {
   return result;
 }
 
-fs.writeFileSync("rand.txt", randomString(1000000));
+for (let i = 0; i < 10; i++) {
+  let str = randomString(1000000);
+  fs.appendFileSync("rand.txt", str);
+}
